@@ -15,7 +15,7 @@
 	
 		<div class="main-nav">
 		    <h1 class="logo">
-                <!-- <img src="logo.png" alt="salty"> -->
+                <img src="logo.png" alt="salty">
                 <a>Salty</a>
             </h1>
 			<a class="nav-item" href="./?p=rec">Receptek</a>
