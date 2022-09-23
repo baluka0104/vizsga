@@ -22,27 +22,27 @@
         }
     ?>
 		<div class="popup">
-            <div class="form">
+            <form class="form" action="process.php" method="post">
                 <h2>Bejelentkezés</h2>
                 <div class="form-element">
                     <label for="username">Felhasználónév:<em>*</em></label>
-                    <input id="username" type="text"/>
+                    <input id="username" type="text" name="username"/>
                 </div>
                 <div class="form-element">
                     <label for="password">Jelszó:<em>*</em></label>
-                    <input id="password" type="password"/>
+                    <input id="password" type="password" name="password"/>
                 </div>
                 <div class="form-element">
                     <input type="checkbox" id="remember-me">
                     <label for="remember-me">Emlékezz rám</label>
                 </div>
                 <div class="form-element">
-                    <button>Bejelentkezés</button>
+                    <button type="submit" name="bejSubmit">Bejelentkezés</button>
                 </div>
                 <div class="form-element">
                     <a href="#">Elfelejtettem a jelszavam</a>
                 </div>
-            </div>
+            </form>
 		</div>
 
 	</body>
