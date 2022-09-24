@@ -4,7 +4,7 @@ body {
     margin: 0;
     line-height: 1.6;
     min-height: 100vh;
-    background-color: #1a79ca;
+    background-color: #3bb7ff;
 }
 
 a {
@@ -51,6 +51,15 @@ a.nav-item:hover {
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+
+.login {
+    float: right;
+    margin-right: 40px;
+}
+
+.welcome-test {
+    font-size: 50%;
 }
 
 

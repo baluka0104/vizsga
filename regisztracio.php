@@ -16,15 +16,15 @@
                 <h2>Regisztráció</h2>
                 <div class="form-element">
                     <label for="email">Email cím:<em>*</em></label>
-                    <input id="email" type="email" name="email"/>
+                    <input id="email" type="email" name="email" required/>
                 </div>
                 <div class="form-element">
                     <label for="username">Felhasználónév:<em>*</em></label>
-                    <input id="username" type="text" name="username"/>
+                    <input id="username" type="text" name="username" required/>
                 </div>
                 <div class="form-element">
                     <label for="password">Jelszó:<em>*</em></label>
-                    <input id="password" type="password" name="password"/>
+                    <input id="password" type="password" name="password" required/>
                 </div>
                 <div>
                     <label for="birthDate">Születési dátum:</label>

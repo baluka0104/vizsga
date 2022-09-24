@@ -2,7 +2,7 @@
     $email = $_POST['email'];
     $username = $_POST['username'];
     $password = $_POST['password'];
-	$hashedpwd = md5($password);
+	$hashedpwd = password_hash($password, PASSWORD_DEFAULT);
     $birthDate = $_POST['birthYear'].".".$_POST['birthMonth'].".".$_POST['birthDay'];
 	
 
@@ -13,6 +13,11 @@
             echo "$conn->connect_error";
             die("Connection Failed : ". $conn->connect_error);
         }
+        if (strlen($username) < 4) {
+            header("location: index.php?p=reg&error=username-min-4");
+            exit();
+        }
+
         $stmt = $conn->prepare("insert into user(email, unev, jelszo, szuldatum) values(?, ?, ?, ?)");
         $stmt->bind_param("ssss", $email, $username, $hashedpwd, $birthDate);
         if (!$execval = $stmt->execute()) {

@@ -20,6 +20,8 @@
                 echo "Valami hiba történt!";
             }
         }
+
+
     ?>
 		<div class="popup">
             <form class="form" action="process.php" method="post">
@@ -33,7 +35,7 @@
                     <input id="password" type="password" name="password"/>
                 </div>
                 <div class="form-element">
-                    <input type="checkbox" id="remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me" value="checked">
                     <label for="remember-me">Emlékezz rám</label>
                 </div>
                 <div class="form-element">
