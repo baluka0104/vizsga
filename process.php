@@ -17,7 +17,13 @@
         $stmt->bind_param("ss", $username, $hashedpwd);
 
 
+
+
+
+
+
         
+
         if (!$execval = $stmt->execute()) {
             echo "error";
             exit();
