@@ -14,10 +14,8 @@
             
 	
 		<div class="main-nav">
-		    <h1 class="logo">
-                <img class="logo" src="logo0.png" alt="salty">
-                <!-- <a>Salty</a> -->
-            </h1>
+            <img class="logo" src="logo0.png" alt="salty">
+            <!-- <a>Salty</a> -->
 			<a class="nav-item" href="./?p=rec">Receptek</a>
 			<a class="nav-item" href="./?p=recfel">Receptfeltöltés</a>
 			<a class="nav-item" href="./?p=huto">Hűtőm</a>

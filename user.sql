@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Sze 20. 22:49
+-- Létrehozás ideje: 2022. Sze 25. 01:26
 -- Kiszolgáló verziója: 10.4.21-MariaDB
 -- PHP verzió: 8.0.12
 
@@ -42,18 +42,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`uid`, `email`, `unev`, `jelszo`, `statusz`, `szuldatum`, `regdatum`) VALUES
-(2, 'kutya@cica.com', 'alma', 'asdasd', '', '0000-00-00', '0000-00-00 00:00:00'),
-(3, 'kiraly@mail.com', 'Karaj', 'asdasd', '', '0000-00-00', '0000-00-00 00:00:00'),
-(4, 'asd@asd.com', 'asd', 'asd', '', '0000-00-00', '0000-00-00 00:00:00'),
-(5, 'csorgvasdi@af.copm', 'alma', 'kseo', '', '0000-00-00', '0000-00-00 00:00:00'),
-(6, 'test@g.com', 'test', 'test', '', '0000-00-00', '2022-09-20 20:41:53'),
-(7, 'mama@gmail.com', 'kajak', 'asdasd', '', '0000-00-00', '2022-09-20 21:04:25'),
-(8, 'csorvasi.balazs@gmail.com', 'baluka0104', 'asdélkasd', '', '0000-00-00', '2022-09-20 21:05:11'),
-(9, 'asd@gkma.com', 'asdasd', 'asdasd', '', '0000-00-00', '2022-09-20 21:09:43'),
-(10, 'alma@gmail.com', 'körte', 'farok', '', '1969-04-20', '2022-09-20 21:11:29'),
-(11, 'csorvasi.balazs@gmail.com', 'baluka0104', 'aslkjasfdljkasd', '', '2003-01-04', '2022-09-20 21:36:37'),
-(12, 'kuki@gaga.com', 'galaga', 'testsete', '', '2009-04-19', '2022-09-20 21:40:11'),
-(13, 'gugugaga@gmail.com', 'gagaga', 'dc8593c0b38f2bc21ffb8ce3ee486bb8', '', '2020-04-20', '2022-09-20 21:41:43');
+(16, 'csorvasi.balazs@gmail.com', 'admin', '$2y$10$iT6Z2rDWm9Uo7gR3gGQruuJvH.ur1YOH/prMFGBYz0sybGFPBCaTG', '', '2003-01-04', '2022-09-24 20:30:20'),
+(17, 'sanyia.kiraly@gmail.com', 'lali', '$2y$10$dWbZRbuPIgJTxSgOSiBl8OY9QNRWzwVaGPxfDdBg17kPmDIctBBpu', '', '2019-03-15', '2022-09-24 21:35:42');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -73,7 +63,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT a táblához `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

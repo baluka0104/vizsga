@@ -15,15 +15,12 @@ a {
     box-sizing: border-box;
 }
 
-h1 {
-    margin: 10px;
-}
-
 .logo {
     float: left;
-    margin: 5px;
+    margin: -7px 4px 10px 20px;
     /* font-size: 1.65em; */
-    width: 100px;
+    width: 110px;
+
 }
 
 
