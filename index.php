@@ -20,7 +20,7 @@
 			<a class="nav-item" href="./?p=recfel">Receptfeltöltés</a>
 			<a class="nav-item" href="./?p=huto">Hűtőm</a>
 			<a class="nav-item" href="./?p=kedv">Kedvencek</a>
-            <div class="login">
+        <div class="login">
             <?php
 
             //session_destroy();
@@ -61,13 +61,13 @@
         if (isset($_GET['p']))  $p=$_GET['p'];
         else                    $p="";
 
-        if($p=="rec")  print"<h2>Receptek</h2>";        else
+        if($p=="rec")  include("receptek.php");         else
         if($p=="recfel") include("recfel.php");         else
-        if($p=="huto")   print"<h2>Hűtőm</h2>";         else
+        if($p=="huto")   include("huto.php");           else
         if($p=="kedv")   include("kedvenc.php");        else   
         if($p=="bel")  include("bejel.php");            else
         if($p=="reg")   include("regisztracio.php");    else
-        if($p=="kij")   include("kijelentkezes.php");    else
+        if($p=="kij")   include("kijelentkezes.php");   else
                         include("404.php");
 
         ?>
