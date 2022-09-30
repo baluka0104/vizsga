@@ -32,7 +32,7 @@
 
 
 
-    /* Európai országok lekérdezése */
+    /* Receptek lekérdezése */
 
     $tabla = mysqli_query( $adb , "
 
@@ -43,12 +43,12 @@
 
 
 
-    echo "<div id='orszlista'>" ;
+    echo "<div id='etelek'>" ;
         while( $sor = mysqli_fetch_array( $tabla ) )
         {
-            echo "<div href='index.php?p=$sor[0]'>$sor[rnev]</div><br>" ;
-            echo "<div href='index.php?p=$sor[0]'>$sor[osszetevok]</div><br>" ;
-            echo "<div href='index.php?p=$sor[0]'>$sor[elkeszites]</div><br>" ;
+            echo "<div class='recept-nev'>$sor[rnev]</div><br>" ;
+            echo "<div class='recept-osszetevok'>$sor[osszetevok]</div><br>" ;
+            echo "<div class='recept-elkeszites'>$sor[elkeszites]</div><br>" ;
             "<br><br>";
         }
     "</div>" ;

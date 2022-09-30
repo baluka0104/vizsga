@@ -20,7 +20,8 @@
 			<a class="nav-item" href="./?p=recfel">Receptfeltöltés</a>
 			<a class="nav-item" href="./?p=huto">Hűtőm</a>
 			<a class="nav-item" href="./?p=kedv">Kedvencek</a>
-        <div class="login">
+            
+            <div class="login">
             <?php
 
             //session_destroy();
