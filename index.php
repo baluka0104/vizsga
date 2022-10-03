@@ -24,7 +24,7 @@
             <div class="login">
             <?php
 
-            //session_destroy();
+            session_destroy();
             //$_SESSION['uid'] = 1;
 
             if (isset($_COOKIE['uid']) && !isset($_SESSION['uid'])) {
