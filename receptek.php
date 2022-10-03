@@ -1,26 +1,8 @@
 <h2>Receptek</h2> 
 
-
-<!-- <div>
-    <form class="recept-element" >
-        <div class="recept-item">
-            <input type="text" class="receptName" name="receptName" value="Recept neve"></label><br>
-            <textarea class="osszetevok" name="osszetevok">maga a recept</textarea><br>
-            <textarea class="elkeszites" name="elkeszites">Elkészítés</textarea>
-            <div class="form-element">
-                    <button type="submit" name="recSubmit">Receptek</button>
-            </div>
-        </div>
-       
-        
-    </form>
-</div> -->
-
-
-
-
-
 <?php
+
+
 
 
 
@@ -46,10 +28,17 @@
     echo "<div id='etelek'>" ;
         while( $sor = mysqli_fetch_array( $tabla ) )
         {
-            echo "<div class='recept-nev'>$sor[rnev]</div><br>" ;
-            echo "<div class='recept-osszetevok'>$sor[osszetevok]</div><br>" ;
-            echo "<div class='recept-elkeszites'>$sor[elkeszites]</div><br>" ;
-            "<br><br>";
+            echo "<div style=' border: solid 1px black; margin: 5px;'>";
+                echo "<div class='recept-nev' style=' font-size: 25px; '>$sor[rnev]</div><br>" ;
+                echo "<div class='recept-osszetevok'>
+                <ul>
+                    <li>$sor[osszetevok]</li>
+                </ul>
+                
+                </div><br>" ;
+                echo "<div class='recept-elkeszites'>$sor[elkeszites]</div><br>" ;
+                "<br><br>";
+            "</div>";
         }
     "</div>" ;
 
