@@ -69,7 +69,7 @@
         if($p=="bel")  include("bejel.php");            else
         if($p=="reg")   include("regisztracio.php");    else
         if($p=="kij")   include("kijelentkezes.php");   else
-                        include("404.php");
+                        include("receptek.php");
 
         ?>
         <!-- <iframe name="kisablak"></iframe> -->
