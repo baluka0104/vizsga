@@ -10,10 +10,6 @@ body {
 }
 
 
-.header {
-    box-sizing: border-box;
-}
-
 .logo {
     float: left;
     margin: -7px 4px 10px 20px;
@@ -41,6 +37,7 @@ a.nav-item:hover {
 
 
 .header {
+    box-sizing: border-box;
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
