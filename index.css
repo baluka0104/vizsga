@@ -1,4 +1,6 @@
 
+/* index.php style */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -7,9 +9,6 @@ body {
     background-color: #3bb7ff;
 }
 
-a {
-    text-decoration: none;
-}
 
 .header {
     box-sizing: border-box;
@@ -24,13 +23,14 @@ a {
 }
 
 
-.main-nav a {
+.main-nav a.nav-item {
     padding: 10px 15px;
     text-transform: none;
 	text-align: center;
 	display: inline-block;
 	font-size: 1.25em;
     color:#0a1018;
+    text-decoration: none;
 }
 
 
@@ -55,18 +55,67 @@ a.nav-item:hover {
     margin-right: 40px;
 }
 
-.welcome-test {
-    font-size: 50%;
+a.welcome-text {
+    font-size: 120%;
+    text-shadow: 2px 2px 5px gray;
 }
-
-
-
-
 
 
 
 #tartalom {
+    margin:auto;    
     position: absolute;
-    margin:auto;
 }
 
+
+
+
+
+
+/* receptek.php style */
+
+.etelek {
+    border: solid 1px black; 
+    border-radius: 1rem;
+    background-color: #4dbcfc;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    margin: 40px 20px;
+    padding: 8px;
+    width: 600px;
+}
+
+.recept-nev {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px) {
+
+    .header .main-nav{
+        display: inline-block;
+        text-align: center;
+        float: none;
+        flex-flow: column;
+    }
+    .login {
+        float: none;
+    }
+
+
+
+
+
+    .etelek {
+        width: 60%
+    }
+}

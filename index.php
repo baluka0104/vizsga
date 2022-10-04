@@ -14,13 +14,14 @@
             
 	
 		<div class="main-nav">
-            <img class="logo" src="logo0.png" alt="salty">
+            <a href="../vizsga/index.php">
             <!-- <a>Salty</a> -->
+                <img class="logo" src="logo0.png" alt="salty">
+            </a>
 			<a class="nav-item" href="./?p=rec">Receptek</a>
 			<a class="nav-item" href="./?p=recfel">Receptfeltöltés</a>
 			<a class="nav-item" href="./?p=huto">Hűtőm</a>
-			<a class="nav-item" href="./?p=kedv">Kedvencek</a>
-            
+			<a class="nav-item" href="./?p=kedv">Kedvencek</a>           
             <div class="login">
             <?php
 
@@ -62,11 +63,11 @@
         if (isset($_GET['p']))  $p=$_GET['p'];
         else                    $p="";
 
-        if($p=="rec")  include("receptek.php");         else
+        if($p=="rec")   include("receptek.php");         else
         if($p=="recfel") include("recfel.php");         else
         if($p=="huto")   include("huto.php");           else
         if($p=="kedv")   include("kedvenc.php");        else   
-        if($p=="bel")  include("bejel.php");            else
+        if($p=="bel")   include("bejel.php");            else
         if($p=="reg")   include("regisztracio.php");    else
         if($p=="kij")   include("kijelentkezes.php");   else
                         include("receptek.php");

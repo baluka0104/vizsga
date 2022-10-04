@@ -1,4 +1,4 @@
-<h2>Receptek</h2> 
+<!-- <h2>Receptek</h2>  -->
 
 <?php
 
@@ -18,7 +18,7 @@
     " ) ;
 
 
-    echo "<div id='etelek'>" ;
+    echo "<div class='etelek1'>" ;
         while( $sor = mysqli_fetch_array( $tabla ) )
         {
             // echo "<div style=' border: solid 1px black; margin: 5px;'>
@@ -38,11 +38,11 @@
             //     <br><br>
             // </div>";
 
-            echo "<div style=' border: solid 1px black; margin: 5px;'>
-                <div class='recept-nev' style=' font-size: 25px; '>$sor[rnev]</div><br>
+            echo "<div class='etelek'>
+                <div class='recept-nev'>$sor[rnev]</div><br>
                 <div class='recept-osszetevok'>$sor[osszetevok]</div><br>
                 <div class='recept-elkeszites'>$sor[elkeszites]</div><br>
-                <br><br>
+                
             </div>";
         }
     "</div>" ;
