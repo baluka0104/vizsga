@@ -7,8 +7,12 @@
     <title>Salty</title>
 	<link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="logo-favicon.png">
+    <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+    <script src="fav.js"></script>
 </head>
 <body>
+
+
 
     <header class="header">
             
