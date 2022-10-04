@@ -79,15 +79,75 @@ a.welcome-text {
     border-radius: 1rem;
     background-color: #4dbcfc;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-    margin: 40px 20px;
+    margin: 40px 50px;
     padding: 8px;
     width: 600px;
 }
 
+.etelek:hover {
+    transform: scale(1.08);
+}
+
 .recept-nev {
+    margin: 10px 20px;
     font-size: 25px;
     font-weight: bolder;
 }
+
+.recept-osszetevok li{
+    list-style-type: none;
+    margin-left: -15px
+}
+
+.recept-elkeszites {
+    padding: 0 25px 10px;
+}
+
+
+
+.btns{
+    position: absolute;
+    top: 216px;
+    left: 328px;
+    display: flex;
+}
+
+.btn{
+    background: transparent;
+    border: none;
+    margin: 87px;
+    font-size: 88px;
+    outline: none;
+    color: grey;
+}
+
+.btn::before {
+    color: gray;
+}
+
+.btn i:hover{
+    cursor: pointer;
+}
+
+
+.recfelTitle {
+    width: 100%;
+    text-align: center;
+}
+
+.recept-item {
+    margin: 5px 20px 5px;
+
+}
+
+
+.receptName {
+    width: 200px;
+
+}
+
+
+
 
 
 

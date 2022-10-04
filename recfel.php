@@ -11,7 +11,7 @@ else
                 <textarea class="osszetevok" name="osszetevok" required placeholder="Ide írd a hozzávalókat (;) jellel elválasztva" cols="70" rows="12"></textarea><br>
                 <textarea class="elkeszites" name="elkeszites" required placeholder="Ide írd az elkészítés lépéseit" cols="70" rows="12"></textarea>
                 <div class="form-element">
-                        <button type="submit" name="recSubmit">Recept beküldése</button>
+                        <button type="submit" class="recSubmit" name="recSubmit">Recept beküldése</button>
                 </div>
             </div>
         
