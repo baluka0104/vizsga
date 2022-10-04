@@ -17,34 +17,25 @@
 
     " ) ;
 
-
+    
     echo "<div class='etelek1'>" ;
-        while( $sor = mysqli_fetch_array( $tabla ) )
-        {
-            // echo "<div style=' border: solid 1px black; margin: 5px;'>
-            //     <div class='recept-nev' style=' font-size: 25px; '>$sor[rnev]</div><br>
-            //     <div class='recept-osszetevok'>
-            //     <ul>";
-            
-            //         var_dump(explode(";", $sor['osszetevok']));
-            //         var_dump(count($sor['osszetevok']));
-            //         for($i = 0; $i < count($sor['osszetevok']); $i++){
-            //             echo "<li>". $sor['osszetevok'][$i] ."</li>";
-            //         };
-                    
-            //     echo "</ul>
-            //     </div><br>
-            //     <div class='recept-elkeszites'>$sor[elkeszites]</div><br>
-            //     <br><br>
-            // </div>";
-
-            echo "<div class='etelek'>
-                <div class='recept-nev'>$sor[rnev]</div><br>
-                <div class='recept-osszetevok'>$sor[osszetevok]</div><br>
+    
+    while($sor = mysqli_fetch_assoc( $tabla )) {
+        $osszetevok = explode(';', $sor['osszetevok']); 
+        echo "<div class='etelek'>
+                <div class='recept-nev' style=' font-size: 25px; '>$sor[rnev]</div><br>
+                    <div class='recept-osszetevok'>
+                        <ul>";
+                            foreach($osszetevok as $osszetevo) {
+                                echo "<li>". $osszetevo ."</li>";
+                            }
+        echo "          </ul>
+                    </div><br>
                 <div class='recept-elkeszites'>$sor[elkeszites]</div><br>
-                
+                <br><br>
             </div>";
         }
+        
     "</div>" ;
 
 
