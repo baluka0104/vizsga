@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Okt 04. 03:08
+-- Létrehozás ideje: 2022. Okt 04. 03:07
 -- Kiszolgáló verziója: 10.4.21-MariaDB
 -- PHP verzió: 8.0.12
 
@@ -46,6 +46,31 @@ INSERT INTO `receptek` (`rid`, `rnev`, `osszetevok`, `elkeszites`) VALUES
 (5, 'Palacsinta', '30dkg búza liszt; 2dl szódavíz; só (ízlés szerint); 1mk cukor; 2csip szódabikarbóna; 2db tojás; 2ek olaj', 'A hozzávalókat egy habverővel csomómentesre összekeverjük. Egy serpenyőbe kevés olajat hevítünk (csak egyszer, többször nem kell, hiszen a tésztában már benne van az olaj).\r\nEgy merőkanál palacsintatésztát teszünk a felhevített serpenyőbe, mindkét oldalát megsütjük, majd egy tányérra tesszük. Tetszőleges töltelékekkel (pl. kakó, lekvár, túró, Nutella) töltjük, majd összehajtjuk és porcukorral megszórva tálaljuk.'),
 (6, 'Sajtos pogácsa', '3dkg élesztő; 1tk cukor; 1dl tej; 50dkg liszt; 25dkg margarin; 2tk só; 2db tojássárgája; 1.75dl tejföl; 10dkg reszelt sajt; 1db tojássárgája a kenéshez', 'A sajtos pogácsa elkészítéséhez az élesztőt felfuttatjuk egy kevés meglangyosított, cukros tejben.\r\nA lisztet összemorzsoljuk a margarinnal és a sóval, utána összegyúrjuk a többi hozzávalóval és a felfuttatott élesztővel. Meleg helyen duplájára kelesztjük.\r\nKinyújtjuk és háromszor meghajtogatjuk a megkelt tésztát, mindig egy irányban. A hajtogatások között 30 percig pihentetjük.\r\nAmikor végeztünk az utolsó hajtogatással is, kinyújtjuk kb. ujjnyi vastagra. Megkenjük tojássárgájával, majd megszórjuk reszelt sajttal, (de akár köménnyel is megszórhatjuk), majd lisztbe mártott, apró pogácsaszaggatóval kiszaggatjuk.\r\nMiután a tepsibe tettük a pogácsákat, még 10 percig kelesztjük.\r\nElőmelegített sütőben 170 fokon, 25-30 perc alatt pirosra sütjük.');
 
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `user`
+--
+
+CREATE TABLE `user` (
+  `uid` int(11) NOT NULL,
+  `email` varchar(99) NOT NULL,
+  `unev` varchar(99) NOT NULL,
+  `jelszo` varchar(99) NOT NULL,
+  `statusz` varchar(1) NOT NULL,
+  `szuldatum` date NOT NULL,
+  `regdatum` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- A tábla adatainak kiíratása `user`
+--
+
+INSERT INTO `user` (`uid`, `email`, `unev`, `jelszo`, `statusz`, `szuldatum`, `regdatum`) VALUES
+(16, 'csorvasi.balazs@gmail.com', 'admin', '$2y$10$iT6Z2rDWm9Uo7gR3gGQruuJvH.ur1YOH/prMFGBYz0sybGFPBCaTG', '', '2003-01-04', '2022-09-24 20:30:20'),
+(17, 'sanyia.kiraly@gmail.com', 'lali', '$2y$10$dWbZRbuPIgJTxSgOSiBl8OY9QNRWzwVaGPxfDdBg17kPmDIctBBpu', '', '2019-03-15', '2022-09-24 21:35:42'),
+(18, 'proba@gmail.com', 'baluka0104', '$2y$10$PGPkbut9iSud9vrvi1v/Y.b4cBvFZ/FDNWnG5d8wCZJGiMxBQrvye', '', '2003-01-04', '2022-10-03 22:39:53');
+
 --
 -- Indexek a kiírt táblákhoz
 --
@@ -57,6 +82,12 @@ ALTER TABLE `receptek`
   ADD PRIMARY KEY (`rid`);
 
 --
+-- A tábla indexei `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`uid`);
+
+--
 -- A kiírt táblák AUTO_INCREMENT értéke
 --
 
@@ -65,6 +96,12 @@ ALTER TABLE `receptek`
 --
 ALTER TABLE `receptek`
   MODIFY `rid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT a táblához `user`
+--
+ALTER TABLE `user`
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

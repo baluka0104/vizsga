@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Sze 25. 01:26
+-- Létrehozás ideje: 2022. Okt 04. 03:07
 -- Kiszolgáló verziója: 10.4.21-MariaDB
 -- PHP verzió: 8.0.12
 
@@ -43,7 +43,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`uid`, `email`, `unev`, `jelszo`, `statusz`, `szuldatum`, `regdatum`) VALUES
 (16, 'csorvasi.balazs@gmail.com', 'admin', '$2y$10$iT6Z2rDWm9Uo7gR3gGQruuJvH.ur1YOH/prMFGBYz0sybGFPBCaTG', '', '2003-01-04', '2022-09-24 20:30:20'),
-(17, 'sanyia.kiraly@gmail.com', 'lali', '$2y$10$dWbZRbuPIgJTxSgOSiBl8OY9QNRWzwVaGPxfDdBg17kPmDIctBBpu', '', '2019-03-15', '2022-09-24 21:35:42');
+(17, 'sanyia.kiraly@gmail.com', 'lali', '$2y$10$dWbZRbuPIgJTxSgOSiBl8OY9QNRWzwVaGPxfDdBg17kPmDIctBBpu', '', '2019-03-15', '2022-09-24 21:35:42'),
+(18, 'proba@gmail.com', 'baluka0104', '$2y$10$PGPkbut9iSud9vrvi1v/Y.b4cBvFZ/FDNWnG5d8wCZJGiMxBQrvye', '', '2003-01-04', '2022-10-03 22:39:53');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -63,7 +64,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT a táblához `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
