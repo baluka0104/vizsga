@@ -76,7 +76,7 @@ a.welcome-text {
 
 .etelek {
     border: solid 1px black; 
-    border-radius: 1rem;
+    border-radius: 0.6rem;
     background-color: #4dbcfc;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
     margin: 40px 50px;
@@ -137,13 +137,19 @@ a.welcome-text {
 
 .recept-item {
     margin: 5px 20px 5px;
-
 }
 
+.recept-item textarea {
+    resize: none;
+}
 
 .receptName {
     width: 200px;
+}
 
+.recSubmit {
+    width: 135px;
+    height: 40px;
 }
 
 
@@ -159,7 +165,7 @@ a.welcome-text {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
 
     .header .main-nav{
         display: inline-block;
