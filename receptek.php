@@ -24,6 +24,9 @@
         $osszetevok = explode(';', $sor['osszetevok']); 
         echo "<div class='etelek'>
                 <div class='recept-nev' style=' font-size: 25px; '>$sor[rnev]</div>
+                <div class='btns'>
+                <i class='far fa-heart'></i>
+            </div>
                     <div class='recept-osszetevok'>
                         <ul>";
                             foreach($osszetevok as $osszetevo) {
@@ -32,7 +35,7 @@
         echo "          </ul>
                     </div>
                 <div class='recept-elkeszites'>$sor[elkeszites]</div>
-
+                
             </div>";
         }
         

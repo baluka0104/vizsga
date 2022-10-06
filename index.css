@@ -78,14 +78,15 @@ a.welcome-text {
     border: solid 1px black; 
     border-radius: 0.6rem;
     background-color: #4dbcfc;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
     margin: 40px 50px;
     padding: 8px;
     width: 600px;
 }
 
 .etelek:hover {
-    transform: scale(1.08);
+    transform: scale(1);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
 .recept-nev {
@@ -96,7 +97,8 @@ a.welcome-text {
 
 .recept-osszetevok li{
     list-style-type: none;
-    margin-left: -15px
+    margin-left: -15px;
+    max-width: 80%;
 }
 
 .recept-elkeszites {
@@ -106,28 +108,24 @@ a.welcome-text {
 
 
 .btns{
+    float: right;
     position: absolute;
-    top: 216px;
-    left: 328px;
-    display: flex;
-}
-
-.btn{
-    background: transparent;
-    border: none;
-    margin: 87px;
-    font-size: 88px;
-    outline: none;
+    top: -10px;
+    right: 0;
+    font-size: 28px;
+    margin: 20px;
     color: grey;
 }
 
-.btn::before {
-    color: gray;
+.btns i.fa-heart:active {
+    color: red;
 }
 
-.btn i:hover{
+.btns i.fa-heart:hover{
     cursor: pointer;
+    color: black;
 }
+
 
 
 .recfelTitle {
