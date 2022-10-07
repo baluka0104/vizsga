@@ -9,8 +9,8 @@
 
     /* Receptek lekérdezése */
 
-    $tabla = mysqli_query( $adb , "
-
+    $tabla = mysqli_query( $adb , 
+    "
 		SELECT * 
 		FROM   receptek
         
@@ -23,10 +23,10 @@
     while($sor = mysqli_fetch_assoc( $tabla )) {
         $osszetevok = explode(';', $sor['osszetevok']); 
         echo "<div class='etelek'>
-                <div class='recept-nev' style=' font-size: 25px; '>$sor[rnev]</div>
+                <div class='recept-nev'>$sor[rnev]</div>
                 <div class='btns'>
-                <i class='far fa-heart'></i>
-            </div>
+                    <i class='fas fa-heart'></i>
+                </div>
                     <div class='recept-osszetevok'>
                         <ul>";
                             foreach($osszetevok as $osszetevo) {

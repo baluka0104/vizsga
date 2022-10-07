@@ -26,7 +26,7 @@
          //Jelszó ellenőrzése
         $checkPassword = password_verify($password, $userPwdHashed);
         if ($checkPassword == 0) {
-           //Hiba
+           //Hibalehetőségek
           header('location: ../vizsga/index.php?p=bel&error=wrongPassword&uID='. $username);
           exit();
         } else {
