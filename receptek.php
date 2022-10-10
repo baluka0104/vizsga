@@ -18,15 +18,12 @@
     " ) ;
 
     
-    echo "<div class='etelek1'>" ;
     
     while($sor = mysqli_fetch_assoc( $tabla )) {
         $osszetevok = explode(';', $sor['osszetevok']); 
         echo "<div class='etelek'>
                 <div class='recept-nev'>$sor[rnev]</div>
-                <div class='btns'>
-                    <i class='fas fa-heart'></i>
-                </div>
+                
                     <div class='recept-osszetevok'>
                         <ul>";
                             foreach($osszetevok as $osszetevo) {
@@ -39,14 +36,24 @@
             </div>";
         }
         
-    "</div>" ;
 
 
 
 
 ?>
 
+
+
+
+
+
+
+
 <!-- 
-<div class='btns'>
+                <div class='btns'>
                     <button style='color: red' onclick='Toggle()' id='btnh1' class='btn'><i class='fas fa-heart'></i></button>
-                </div> -->
+                </div>
+                <div class='btns'>
+                    <i class='fas fa-heart'></i>
+                </div>
+ -->

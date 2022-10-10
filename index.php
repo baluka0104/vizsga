@@ -7,8 +7,8 @@
     <title>Salty</title>
 	<link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="logo-favicon.png">
-    <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
-    <script src="fav.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+    <script src="fav.js"></script> -->
 </head>
 <body>
 
@@ -24,8 +24,8 @@
             </a>
 			<a class="nav-item" href="./?p=rec">Receptek</a>
 			<a class="nav-item" href="./?p=recfel">Receptfeltöltés</a>
-			<a class="nav-item" href="./?p=huto">Hűtőm</a>
-			<a class="nav-item" href="./?p=kedv">Kedvencek</a>           
+			<!-- <a class="nav-item" href="./?p=huto">Hűtőm</a> -->
+			<!-- <a class="nav-item" href="./?p=kedv">Kedvencek</a>            -->
             <div class="login">
             <?php
 
