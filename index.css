@@ -149,6 +149,10 @@ a.welcome-text {
 .recSubmit {
     width: 135px;
     height: 40px;
+    border-radius: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
 }
 
 
